@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
+import Layout from "@/Components/Layout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +23,7 @@ export default function Home() {
 
       <main className="flex items-center text-black w-full min-h-screen">
         Home
+        <Layout />
       </main>
     </>
   );
