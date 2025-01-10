@@ -3,6 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
 import Layout from "@/Components/Layout";
 import { assets } from "@/assets/assets.js";
+import AnimatedText from "@/Components/AnimatedText";
+import Link from "next/link";
+import SaveAltIcon from '@mui/icons-material/SaveAlt';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,10 +27,29 @@ export default function Home() {
       </Head>
 
       <main className="flex items-center text-black w-full min-h-screen">
-        <Layout className="pt-0">
-          <div className="flex items-center justify-between w-full">
+        <Layout className="pt-4">
+          <div className="flex gap-10 items-center justify-between w-full">
             <div className="w-1/3">
-              <Image src={assets.profilepic} alt="chinweike" className="w-full h-auto"/>
+              <Image src={assets.profilepic} alt="chinweike" className="w-full h-auto rounded-[1.5rem]"/>
+            </div>
+
+            <div className="w-2/3 flex flex-col items-center self-center">
+              {/* <h1>Turning Vision into Reality with code</h1> */}
+
+              <AnimatedText text={"Turning Vision into Reality with code"} className="!text-left"/>
+              <p className="my-4 text-base font-medium">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+              </p>
+
+              <div className="flex gap-5 self-start items-center mt-2">
+                <Link href="/resume" target="_blank"
+                className="flex gap-2 items-center bg-black text-white p-2 px-6 rounded-lg text-lg font-semibold hover:bg-white hover:text-black  border-2 border-solid border-transparent hover:border-black"
+                download={true}> Resume <SaveAltIcon /> </Link>
+
+                <Link href={"/mailto:chinweiketwitter@gmail.com"} target="_blank"
+                className="text-lg font-medium capitalize text-black underline"
+                >Contact me..</Link>
+              </div>
             </div>
           </div>
         </Layout>
