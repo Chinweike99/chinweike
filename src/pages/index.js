@@ -6,6 +6,7 @@ import { assets } from "@/assets/assets.js";
 import AnimatedText from "@/Components/AnimatedText";
 import Link from "next/link";
 import SaveAltIcon from '@mui/icons-material/SaveAlt';
+import Hireme from "@/Components/Hireme";
 
 
 const geistSans = Geist({
@@ -49,10 +50,14 @@ export default function Home() {
                 <Link href={"/mailto:chinweiketwitter@gmail.com"} target="_blank"
                 className="text-lg font-medium capitalize text-black underline"
                 >Contact me..</Link>
+                <Hireme />
               </div>
             </div>
           </div>
         </Layout>
+
+        {/* <Hireme /> */}
+
       </main>
     </>
   );
