@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
 import Layout from "@/Components/Layout";
+import { assets } from "@/assets/assets.js";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,8 +23,13 @@ export default function Home() {
       </Head>
 
       <main className="flex items-center text-black w-full min-h-screen">
-        Home
-        <Layout />
+        <Layout className="pt-0">
+          <div className="flex items-center justify-between w-full">
+            <div className="w-1/3">
+              <Image src={assets.profilepic} alt="chinweike" className="w-full h-auto"/>
+            </div>
+          </div>
+        </Layout>
       </main>
     </>
   );
