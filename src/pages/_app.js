@@ -19,8 +19,8 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }) {
   return (
     <main className={`${geistSans.variable} geist-sans`}>
+      <Navbar />
        <Component {...pageProps} />
-       <Navbar />
        <Footer />
     </main>
   );
