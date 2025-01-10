@@ -11,6 +11,8 @@
   :root {
     --background: #f5f8fa;
     --foreground: #ededed;
+
+    --primary-color: rgb(248, 62, 233); 
   }
 }
 
