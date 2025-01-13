@@ -12,8 +12,6 @@ import { Scale } from "@mui/icons-material";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
-
-  console.log(router.asPath);
   return (
     <Link href={href} className={`${className} relative group`}>
       {title}
