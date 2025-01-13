@@ -1,21 +1,69 @@
+import { assets } from "@/assets/assets";
 import AnimatedText from "@/Components/AnimatedText";
 import Layout from "@/Components/Layout";
 import Head from "next/head";
+import Image from "next/image";
 import React from "react";
 
 const profile = () => {
   return (
     <>
       <Head>
-        <title>Chinweikwe || About me page</title>
+        <title>Chinweikwe | About page</title>
         <meta name="Chinweike" content="about me" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-10">
-          <AnimatedText text={"Passion fuels purpose"} />
+          <AnimatedText text={"Passion fuels purpose"} className="mb-10" />
           <div className="grid w-full grid-cols-8 gap-16">
-            <div>
-                <h2>Biography</h2>
+            <div className="col-span-3 flex flex-col items-start justify-start">
+              <h2 className="mb-4 text-lg font-bold  uppercase texxr-black/75">
+                Biography
+              </h2>
+              <p className="font-medium">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
+              </p>
+              <p className="font-medium mt-2">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
+              </p>
+              <p className="font-medium mt-2">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-black bg-white p-8">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-black" />
+              <Image src={assets.must2} className="w-full h-auto rounded-2xl" />
+            </div>
+
+            <div className="col-span-2 flex flex-col items-end justify-between ">
+
+                <div className="flex flex-col items-center justify-center">
+                    <span>20+</span>
+                    <h2>Satisfied clients</h2>
+                </div>
+
+                <div className="flex flex-col items-center justify-center">
+                    <span>30+</span>
+                    <h2>Projects completed</h2>
+                </div>
+
+                <div className="flex flex-col items-center justify-center">
+                    <span>2+</span>
+                    <h2>Years of experience</h2>
+                </div>
+
             </div>
           </div>
         </Layout>

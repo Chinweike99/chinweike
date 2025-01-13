@@ -7,6 +7,7 @@ import AnimatedText from "@/Components/AnimatedText";
 import Link from "next/link";
 import SaveAltIcon from '@mui/icons-material/SaveAlt';
 import Hireme from "@/Components/Hireme";
+import { motion } from "framer-motion";
 
 
 const geistSans = Geist({
@@ -19,6 +20,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const imageSlide = {
+  initial: {
+    opacity: 0,
+    y: -50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1.5,
+    },
+  },
+};
+
 export default function Home() {
   return (
     <>
@@ -30,9 +45,13 @@ export default function Home() {
       <main className="flex items-center text-black w-full min-h-screen">
         <Layout className="pt-4">
           <div className="flex gap-10 items-center justify-between w-full">
-            <div className="w-1/3">
+            <motion.div className="w-1/3"
+            variants={imageSlide}
+              initial="initial"
+              animate="animate"
+            >
               <Image src={assets.profilepic} alt="chinweike" className="w-full h-auto rounded-[1.5rem]"/>
-            </div>
+            </motion.div>
 
             <div className="w-2/3 flex flex-col items-center self-center">
               {/* <h1>Turning Vision into Reality with code</h1> */}
