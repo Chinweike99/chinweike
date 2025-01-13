@@ -1,5 +1,6 @@
 import { assets } from "@/assets/assets";
 import AnimatedText from "@/Components/AnimatedText";
+import Experience from "@/Components/Experience";
 import Layout from "@/Components/Layout";
 import Skills from "@/Components/Skills";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
@@ -101,6 +102,7 @@ const profile = () => {
           </div>
 
           <Skills />
+          <Experience />
         </Layout>
       </main>
     </>
