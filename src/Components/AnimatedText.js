@@ -23,16 +23,16 @@ const singleword = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1.5
-    }
-  }
+      duration: 1.5,
+    },
+  },
 };
 
 const AnimatedText = ({ text, className = "" }) => {
   return (
     <div className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden">
       <motion.h1
-        className={`inline-block w-full text-black font-bold capitalize text-4xl ${className}`}
+        className={`inline-block w-full text-black font-bold capitalize text-5xl ${className}`}
         variants={quotes}
         initial="initial"
         animate="animate"
@@ -43,8 +43,8 @@ const AnimatedText = ({ text, className = "" }) => {
               key={word + "-" + index}
               className="inline-block"
               variants={singleword}
-            //   initial="initial"
-            //   animate="animate"
+              //   initial="initial"
+              //   animate="animate"
             >
               {word}&nbsp;
             </motion.span>

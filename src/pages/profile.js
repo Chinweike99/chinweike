@@ -1,6 +1,7 @@
 import { assets } from "@/assets/assets";
 import AnimatedText from "@/Components/AnimatedText";
 import Layout from "@/Components/Layout";
+import Skills from "@/Components/Skills";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
@@ -98,6 +99,8 @@ const profile = () => {
 
             </div>
           </div>
+
+          <Skills />
         </Layout>
       </main>
     </>
