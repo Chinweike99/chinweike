@@ -12,7 +12,8 @@ import { Scale } from "@mui/icons-material";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
-  console.log(router);
+
+  console.log(router.asPath);
   return (
     <Link href={href} className={`${className} relative group`}>
       {title}
@@ -32,7 +33,7 @@ const Navbar = () => {
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav>
         <CustomLink href="/" title={"Home"} className="mr-4" />
-        <CustomLink href="/about" title={"About"} className="mx-4" />
+        <CustomLink href="/chinweike" title={"About"} className="mx-4" />
         <CustomLink href="/project" title={"Projects"} className="mx-4" />
         <CustomLink href="/articles" title={"Articles"} className="ml-4" />
       </nav>
@@ -64,7 +65,7 @@ const Navbar = () => {
             style={{ fontSize: "1.5rem" }}
           />
         </motion.a>
-        
+
         <motion.a href="/" target={"_blank"} whileHover={{ y: -4 }}>
           <FacebookIcon
             className="text-blue-800"

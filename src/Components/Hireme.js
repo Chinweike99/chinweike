@@ -9,7 +9,7 @@ const Hireme = () => {
         <div className='w-48 h-auto flex items-center justify-center relative'>
             <Image src={assets.webDeveloper} className='fill-black animate-spin-slow'/>
 
-            <Link href={"/"} className='flex items-center justify-center absolute bg-black text-white font-semibold p-1 rounded-full h-[5rem] w-[5rem]'
+            <Link href={"/"} className='flex items-center justify-center absolute bg-black text-white font-semibold p-1 rounded-full h-[5rem] w-[5rem] hover:bg-white hover:text-black hover:border-2 hover:border-black'
             
             >Hire Me</Link>
         </div>
