@@ -3,7 +3,9 @@ import profilepic from './profilepic.jpg'
 import webDeveloper from './webDeveloper.png'
 import must from './must.jpg'
 import must2 from './must2.jpg'
+import ecomerce from "./ecomerce.png"
+import tasty from "./tasty.png"
 
 export const assets = {
- profilephoto, profilepic, webDeveloper, must, must2
+ profilephoto, profilepic,ecomerce, webDeveloper, must, must2, tasty
 }
