@@ -1,5 +1,6 @@
 import { assets } from "@/assets/assets";
 import AnimatedText from "@/Components/AnimatedText";
+import Education from "@/Components/Education";
 import Experience from "@/Components/Experience";
 import Layout from "@/Components/Layout";
 import Skills from "@/Components/Skills";
@@ -103,6 +104,7 @@ const profile = () => {
 
           <Skills />
           <Experience />
+          <Education />
         </Layout>
       </main>
     </>
