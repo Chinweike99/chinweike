@@ -8,7 +8,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { motion } from "framer-motion";
-import { Scale } from "@mui/icons-material";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import useThemeSwitcher from "./Hooks/ThemeSwitcher";
+
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -27,6 +30,10 @@ const CustomLink = ({ href, title, className = "" }) => {
 };
 
 const Navbar = () => {
+
+  const [mode, setMode] = useThemeSwitcher();
+
+
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav>
@@ -71,6 +78,15 @@ const Navbar = () => {
             style={{ fontSize: "1.5rem" }}
           />
         </motion.a>
+
+        <button onClick={()=> setMode(mode === "white" ? "black" : "white")}>
+          {
+            mode === "black"? <TipsAndUpdatesIcon className="fill-black"/> 
+            : <DarkModeIcon className="fill-black"/>
+          }
+        </button>
+
+
       </nav>
 
       <div className="absolute left-[50%] top-2 translate-x-[50%]">
