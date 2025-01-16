@@ -5,7 +5,7 @@ import Licons from './Licons';
 
 const Details = ({type, degree, time, place, info}) =>{
     const ref = useRef(null)
-    return <li ref={ref} className='my-8 first:mt-0 last:mt-0 w-[80%] mx-auto flex flex-col items-start justify-between'>
+    return <li ref={ref} className='my-8 first:mt-0 last:mt-0 w-[80%] mx-auto flex flex-col items-start justify-between dark:text-light' >
         <Licons reference={ref}/>
         <motion.div
         initial={{y:50}}

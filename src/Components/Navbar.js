@@ -21,7 +21,7 @@ const CustomLink = ({ href, title, className = "" }) => {
       <span
         className={`h-[1.5px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === href ? "w-full" : "w-0"
-        }`}
+        } dark:bg-light`}
       >
         &nbsp;
       </span>
@@ -35,7 +35,7 @@ const Navbar = () => {
 
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light border-b border-b-solid dark:border-b-light">
       <nav>
         <CustomLink href="/" title={"Home"} className="mr-4" />
         <CustomLink href="/projects" title={"Projects"} className="mx-4" />
@@ -79,7 +79,9 @@ const Navbar = () => {
           />
         </motion.a>
 
-        <button onClick={()=> setMode(mode === "light" ? "dark" : "light")}>
+        <button onClick={()=> setMode(mode === "light" ? "dark" : "light")}
+          className={`ml-3 h-[1.9rem] w-[1.9rem] fles items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+          >
           {
             mode === "dark"? <TipsAndUpdatesIcon className="fill-dark"/> 
             : <DarkModeIcon className="fill-dark"/>

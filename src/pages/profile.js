@@ -41,7 +41,7 @@ const profile = () => {
         <title>Chinweikwe | About page</title>
         <meta name="Chinweike" content="about me" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-10">
           <AnimatedText text={"Passion fuels purpose"} className="mb-10" />
           <div className="grid w-full grid-cols-8 gap-16">
@@ -82,21 +82,21 @@ const profile = () => {
                     <span className="inline-block text-5xl font-bold">
                         <AnimatedNumbers value={20}/>+
                     </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75">Satisfied clients</h2>
+                    <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">Satisfied clients</h2>
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
                     <span className="inline-block text-5xl font-bold">
                         <AnimatedNumbers value={30}/>+
                     </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75">Projects completed</h2>
+                    <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">Projects completed</h2>
                 </div>
 
                 <div className="flex flex-col items-center justify-center">
                     <span className="inline-block text-5xl font-bold">
                         <AnimatedNumbers value={2}/>+
                     </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75">Years of experience</h2>
+                    <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">Years of experience</h2>
                 </div>
 
             </div>
