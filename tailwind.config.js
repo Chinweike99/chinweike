@@ -14,6 +14,8 @@ module.exports = {
         mont: ["var(--font-mot)", ...fontFamily.sans],
       },
       colors:{
+        dark: "#1b1b1b",
+        light: "#f5f5f5",
         primary: "#863496",
         primaryDark: "#58E609"
       },

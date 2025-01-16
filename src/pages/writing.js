@@ -46,7 +46,7 @@ const ShowonHover = ({ title, img, link }) => {
 
 const Article = ({ img, title, link, date }) => {
   return (
-    <motion.li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-white text-black first:mt-0 border border-solid border-black border-r-4 border-b-4"
+    <motion.li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4"
     initial={{ y: 100 }}
       whileInView={{y:0, transition:{ duration: 0.9, type: "spring",}}}
       
@@ -63,8 +63,8 @@ const Article = ({ img, title, link, date }) => {
 
 const MyArticles = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-white border border-solid border-black rounded-2xl">
-      <div className="absolute top-0 -right-3  -z-10 w-[101%] h-[102%] rounded-[2rem] bg-black" />
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
+      <div className="absolute top-0 -right-3  -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark" />
       <Link
         href={link}
         target="_blank"

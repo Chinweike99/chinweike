@@ -15,7 +15,7 @@ const Details = ({position, company, time, work, stack}) =>{
             <h3 className='capitalize font-bold text-2xl'>{position}&nbsp; 
                 <a className='text-primary capitalize'>{company}</a>
             </h3>
-            <span className='capitalize font-medium text-black/75'>
+            <span className='capitalize font-medium text-dark/75'>
                 {time} 
             </span>
             <p className='font-medium w-full'>
@@ -47,7 +47,7 @@ const Experience = () => {
 
             <div ref={ref} className='w-[95%] mx-auto relative'>
 
-            <motion.div className='absolute left-11 top-0 w-[4px] h-full bg-black origin-top'
+            <motion.div className='absolute left-11 top-0 w-[4px] h-full bg-dark origin-top'
             style={{scaleY: scrollYProgress}}
             />
 

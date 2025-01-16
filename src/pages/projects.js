@@ -18,8 +18,8 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
       whileInView={{ y: 0 }}
       transition={{ duration: 1.5, type: "spring" }}
     >
-      <div className="absolute top-0  -z-10 w-[101%] h-[104%] rounded-[2rem] bg-black" />
-      <div className="relative w-full flex bg-white items-center justify-between rounded-[1.2rem] overflow-hidden border border-solid border-black shadow-2xl">
+      <div className="absolute top-0  -z-10 w-[101%] h-[104%] rounded-[2rem] bg-dark" />
+      <div className="relative w-full flex bg-light items-center justify-between rounded-[1.2rem] overflow-hidden border border-solid border-dark shadow-2xl">
         <Link
           href={link}
           target="_blank"
@@ -42,7 +42,7 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
               {title}
             </h2>
           </Link>
-          <p className="my-2 font-medium text-black">{summary}</p>
+          <p className="my-2 font-medium text-dark">{summary}</p>
           <div className="mt-2 flex items-center">
             <Link href={github} target="_blank">
               <GitHubIcon />
@@ -50,7 +50,7 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
             <Link
               href={github}
               target="_blank"
-              className="ml-3 rounded-lg bg-black text-white p-1 px-6 font-semibold"
+              className="ml-3 rounded-lg bg-dark text-light p-1 px-6 font-semibold"
             >
               See project
             </Link>
@@ -69,8 +69,8 @@ const Project = ({ title, type, img, link, summary, github }) => {
       whileInView={{ y: 0 }}
       transition={{ duration: 1.5, type: "spring" }}
     >
-      <div className="absolute top-0  -z-10 w-[101%] h-[104%] rounded-[2rem] bg-black" />
-      <div className="relative w-full h-[100%] flex bg-white items-center justify-between rounded-[1.2rem] overflow-hidden border border-solid border-black shadow-2xl mb-5">
+      <div className="absolute top-0  -z-10 w-[101%] h-[104%] rounded-[2rem] bg-dark" />
+      <div className="relative w-full h-[100%] flex bg-light items-center justify-between rounded-[1.2rem] overflow-hidden border border-solid border-dark shadow-2xl mb-5">
         <Link
           href={link}
           target="_blank"
@@ -85,7 +85,7 @@ const Project = ({ title, type, img, link, summary, github }) => {
             transition={{duration: 0.6}}
           />
         </Link>
-        {/* <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-black" /> */}
+        {/* <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" /> */}
         <div className="w-full flex flex-col items-start justify-between pl-6">
           <span className="text-primary font-medium text-xl">{type}</span>
           <Link href={link} target="_blank">
@@ -93,7 +93,7 @@ const Project = ({ title, type, img, link, summary, github }) => {
               {title}
             </h2>
           </Link>
-          <p className="my-2 font-medium text-black">{summary}</p>
+          <p className="my-2 font-medium text-dark">{summary}</p>
           <div className="mb-5 flex items-center">
             <Link href={github} target="_blank">
               <GitHubIcon />

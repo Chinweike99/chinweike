@@ -20,7 +20,7 @@ const Details = ({type, degree, time, place, info}) =>{
                     </i>
                 </small>
             </h3>
-            <span className='capitalize font-medium text-black/75'>
+            <span className='capitalize font-medium text-dark/75'>
                 {time} 
             </span>
             <p className='font-medium w-full'>
@@ -52,7 +52,7 @@ const Education = () => {
 
             <div ref={ref} className='w-[95%] mx-auto relative'>
 
-            <motion.div className='absolute left-11 top-0 w-[4px] h-full bg-black origin-top'
+            <motion.div className='absolute left-11 top-0 w-[4px] h-full bg-dark origin-top'
             style={{scaleY: scrollYProgress}}
             />
 

@@ -14,10 +14,10 @@ const Licons = ({reference}) => {
 
 
   return (
-    <figure className='absolute left-[8] stroke-black'>
+    <figure className='absolute left-[8] stroke-dark'>
         <svg className='-rotate-90' width={"75"} height={"65"} viewBox='0 0 100 100'>
             <circle cx={"75"} cy={"50"} r={"20"} className='stroke-primary stroke-1 fill-none'/>
-            <motion.circle cx={"75"} cy={"50"} r={"20"}  className='stroke-[3px] fill-white'
+            <motion.circle cx={"75"} cy={"50"} r={"20"}  className='stroke-[3px] fill-light'
              style={{
                 pathLength: scrollYProgress
              }}

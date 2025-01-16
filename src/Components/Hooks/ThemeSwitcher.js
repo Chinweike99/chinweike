@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 const useThemeSwitcher = () => {
 
-    const preferDarkQuery = "(prefer-color-scheme: black)";
+    const preferDarkQuery = "(prefer-color-scheme: dark)";
     const [mode, setMode] = useState("");
 
     useEffect(()=>{
@@ -11,20 +11,20 @@ const useThemeSwitcher = () => {
 
         const handleChange =()=>{
             if(userPreference){
-                let check = userPreference === "black" ? "black" : "white";
+                let check = userPreference === "dark" ? "dark" : "light";
                 setMode(check);
-                if(check === "black"){
-                    document.documentElement.classList.add("black");
+                if(check === "dark"){
+                    document.documentElement.classList.add("dark");
                 }else{
-                    document.documentElement.classList.remove("black");
+                    document.documentElement.classList.remove("dark");
                 }
             }else{
-                let check = mediaQuery.matches ? "black" : "white"
+                let check = mediaQuery.matches ? "dark" : "light"
                 setMode(check);
-                if(check === "black"){
-                    document.documentElement.classList.add("black");
+                if(check === "dark"){
+                    document.documentElement.classList.add("dark");
                 }else{
-                    document.documentElement.classList.remove("black");
+                    document.documentElement.classList.remove("dark");
                 }
             }
         }
@@ -34,12 +34,12 @@ const useThemeSwitcher = () => {
     }, [])
 
     useEffect(() =>{
-        if(mode === "black"){
-            window.localStorage.setItem("theme", "black");
-            document.documentElement.classList.add("black")
+        if(mode === "dark"){
+            window.localStorage.setItem("theme", "dark");
+            document.documentElement.classList.add("dark")
         }else{
-            window.localStorage.setItem("theme", "white");
-            document.documentElement.classList.remove("black")
+            window.localStorage.setItem("theme", "light");
+            document.documentElement.classList.remove("dark")
         }
     }, [mode])
 

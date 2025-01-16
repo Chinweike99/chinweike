@@ -19,7 +19,7 @@ const CustomLink = ({ href, title, className = "" }) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className={`h-[1.5px] inline-block bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-[1.5px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === href ? "w-full" : "w-0"
         }`}
       >
@@ -79,10 +79,10 @@ const Navbar = () => {
           />
         </motion.a>
 
-        <button onClick={()=> setMode(mode === "white" ? "black" : "white")}>
+        <button onClick={()=> setMode(mode === "light" ? "dark" : "light")}>
           {
-            mode === "black"? <TipsAndUpdatesIcon className="fill-black"/> 
-            : <DarkModeIcon className="fill-black"/>
+            mode === "dark"? <TipsAndUpdatesIcon className="fill-dark"/> 
+            : <DarkModeIcon className="fill-dark"/>
           }
         </button>
 
