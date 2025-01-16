@@ -13,15 +13,15 @@ const Details = ({position, company, time, work, stack}) =>{
         transition={{duration:0.5, type: "spring"}}
         >
             <h3 className='capitalize font-bold text-2xl'>{position}&nbsp; 
-                <a className='text-primary capitalize'>{company}</a>
+                <a className='text-primary dark:text-primaryDark capitalize'>{company}</a>
             </h3>
-            <span className='capitalize font-medium text-dark/75'>
+            <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
                 {time} 
             </span>
             <p className='font-medium w-full'>
                 {work}
             </p>
-            <span className='text-primary font-medium'>{stack}</span>
+            <span className='text-primary dark:text-primaryDark font-medium'>{stack}</span>
         </motion.div>
     </li>
 }
@@ -47,7 +47,7 @@ const Experience = () => {
 
             <div ref={ref} className='w-[95%] mx-auto relative'>
 
-            <motion.div className='absolute left-11 top-0 w-[4px] h-full bg-dark origin-top'
+            <motion.div className='absolute left-11 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light'
             style={{scaleY: scrollYProgress}}
             />
 

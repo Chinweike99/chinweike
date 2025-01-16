@@ -14,19 +14,19 @@ const Details = ({type, degree, time, place, info}) =>{
         >
             <h3 className='capitalize font-bold text-2xl'>
                 {type}&nbsp;
-                <small className='text-primary text-[1rem]'>
+                <small className='text-primary dark:text-primaryDark text-[1rem]'>
                     <i>
                         {degree}
                     </i>
                 </small>
             </h3>
-            <span className='capitalize font-medium text-dark/75'>
+            <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
                 {time} 
             </span>
             <p className='font-medium w-full'>
                 {place}
             </p>
-            <span className='text-primary font-medium'>{info}</span>
+            <span className='text-primary dark:text-primaryDark font-medium'>{info}</span>
         </motion.div>
     </li>
 }
@@ -52,7 +52,7 @@ const Education = () => {
 
             <div ref={ref} className='w-[95%] mx-auto relative'>
 
-            <motion.div className='absolute left-11 top-0 w-[4px] h-full bg-dark origin-top'
+            <motion.div className='absolute left-11 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light'
             style={{scaleY: scrollYProgress}}
             />
 
