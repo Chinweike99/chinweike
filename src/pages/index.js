@@ -43,29 +43,29 @@ export default function Home() {
       </Head>
 
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
-        <Layout className="pt-4">
-          <div className="flex gap-10 items-center justify-between w-full">
-            <motion.div className="w-1/3"
+        <Layout className="pt-0 md:pt-16 sm:pt-8">
+          <div className="flex lg:flex-col gap-10 items-center justify-between w-full">
+            <motion.div className="w-1/3 md:w-2/3"
             variants={imageSlide}
               initial="initial"
               animate="animate"
             >
-              <Image src={assets.profilepic} alt="chinweike" className="w-full h-auto rounded-[1.5rem]" priority sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw" />
+              <Image src={assets.profilepic} alt="chinweike" className="w-full h-auto rounded-[1.5rem] lg:hidden md:inline-block md:w-full" priority sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw" />
               {/* priority increases the image loading speed. */}
             </motion.div>
 
-            <div className="w-2/3 flex flex-col items-center self-center">
+            <div className="w-2/3 flex flex-col items-center self-center lg:text-center lg:w-full">
               {/* <h1>Turning Vision into Reality with code</h1> */}
 
-              <AnimatedText text={"Turning Vision into Reality with code"} className="!text-left"/>
-              <p className="my-4 text-base font-medium text-justify">
+              <AnimatedText text={"Turning Vision into Reality with code"} className="!text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"/>
+              <p className="my-4 text-base font-medium md:text-sm sm:text-xs text-justify lg:text-center md:text-center sm:text-center">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
               </p>
 
-              <div className="flex gap-5 self-start items-center mt-2">
+              <div className="flex gap-5 md:gap-3 self-start items-center mt-2">
                 <Link href="/resume" target="_blank"
-                className="flex gap-2 items-center bg-dark text-light p-2 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark  dark:hover:border-light dark:hover:bg-dark dark:hover:text-light border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark"
-                download={true}> Resume <SaveAltIcon /> </Link>
+                className="flex gap-2 items-center bg-dark text-light p-2 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark  dark:hover:border-light dark:hover:bg-dark dark:hover:text-light border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark md:px-4 "
+                do wnload={true}> Resume <SaveAltIcon /> </Link>
 
                 <Link href={"/mailto:chinweiketwitter@gmail.com"} target="_blank"
                 className="text-lg font-medium capitalize  underline"
