@@ -31,6 +31,8 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
             src={img}
             alt={title}
             className="w-full h-auto overflow-hidden"
+            
+            priority sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw"
 
             whileHover={{scale: 1.03}}
             transition={{duration: 0.6}}
@@ -82,6 +84,8 @@ const Project = ({ title, type, img, link, summary, github }) => {
             src={img}
             alt={title}
             className="w-full h-[100%] overflow-hidden"
+
+            priority sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw"
 
             whileHover={{scale: 1.03}}
             transition={{duration: 0.6}}

@@ -39,6 +39,8 @@ const ShowonHover = ({ title, img, link }) => {
       initial={{opacity:0}}
       whileInView={{opacity:1, transition:{duration:0.5}}}
 
+      priority sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw"
+
       ref={ImgRef} src={img} alt={title} className="w-96 z-10 h-auto hidden absolute rounded-lg" />
     </Link>
   );
@@ -46,7 +48,7 @@ const ShowonHover = ({ title, img, link }) => {
 
 const Article = ({ img, title, link, date }) => {
   return (
-    <motion.li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+    <motion.li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light dark:bg-dark text-dark dark:text-light first:mt-0 border border-solid border-dark dark:border-light border-r-4 border-b-4"
     initial={{ y: 100 }}
       whileInView={{y:0, transition:{ duration: 0.9, type: "spring",}}}
       
@@ -56,15 +58,15 @@ const Article = ({ img, title, link, date }) => {
                 {title}</h2>
             </Link> */}
             <ShowonHover title={title} link={link} img={img} />
-      <span className="text-primary">{date}</span>
+      <span className="text-primary dark:text-primaryDark">{date}</span>
     </motion.li>
   );
 };
 
 const MyArticles = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
-      <div className="absolute top-0 -right-3  -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark" />
+    <li className="relative col-span-1 w-full p-4 bg-light dark:bg-dark border border-solid dark:text-light border-dark dark:border-light rounded-2xl">
+      <div className="absolute top-0 -right-3  -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark dark:bg-light" />
       <Link
         href={link}
         target="_blank"
@@ -76,6 +78,7 @@ const MyArticles = ({ img, title, time, summary, link }) => {
           className="w-full h-auto overflow-hidden"
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.6 }}
+          priority sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
       <Link href={link} target="_blank">
@@ -84,7 +87,7 @@ const MyArticles = ({ img, title, time, summary, link }) => {
         </h2>
       </Link>
       <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time}</span>
+      <span className="text-primary font-semibold dark:text-primaryDark">{time}</span>
     </li>
   );
 };
@@ -96,7 +99,7 @@ const writing = () => {
         <title>Chinweike | Articles page</title>
         <meta name="chinweike" content="articles" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text={"Reading can change your life.."}
