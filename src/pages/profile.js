@@ -45,7 +45,7 @@ const profile = () => {
         <Layout className="pt-10">
           <AnimatedText text={"Passion fuels purpose"} className="mb-10 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 ">
-            <div className="col-span-3 flex flex-col items-start justify-start text-justify xl:col-span-4 md:order-1 md:col-span-8">
+            <div className="col-span-3 flex flex-col items-start justify-start text-justify xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold  uppercase texxr-dark/75">
                 Biography
               </h2>

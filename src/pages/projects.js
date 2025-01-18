@@ -13,24 +13,24 @@ const FramerImage = motion(Image);
 const MyProjects = ({ type, title, summary, img, link, github }) => {
   return (
     <motion.article
-      className="relative w-full rounded-[1.2rem] rounded-br-2xl mt-[4rem]  shadow-2xl
-      dark:text-light dark:border dark:border-solid
+      className="relative w-full rounded-[1.2rem] rounded-br-2xl mt-[4rem]  shadow-2xl 
+      dark:text-light dark:border dark:border-solid 
       "
       initial={{ y: 50 }}
       whileInView={{ y: 0 }}
       transition={{ duration: 1.5, type: "spring" }}
     >
       <div className="absolute top-0  -z-10 w-[101%] h-[104%] rounded-[2rem] bg-dark dark:bg-light" />
-      <div className="relative w-full flex bg-light dark:bg-dark  items-center justify-between rounded-[1.2rem] overflow-hidden border border-solid dark:border-none border-dark shadow-2xl">
+      <div className="relative w-full flex md:flex-col bg-light dark:bg-dark  items-center justify-between rounded-[1.2rem] overflow-hidden border border-solid dark:border-none border-dark shadow-2xl">
         <Link
           href={link}
           target="_blank"
-          className="w-1/2 cursor-pointer overflow-hidden "
+          className="w-1/2 cursor-pointer overflow-hidden md:w-full"
         >
           <FramerImage
             src={img}
             alt={title}
-            className="w-full h-auto overflow-hidden"
+            className="w-full h-[35vh] overflow-hidden"
             
             priority sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw"
 
@@ -39,15 +39,15 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
           />
         </Link>
 
-        <div className="w-1/2 flex flex-col items-start justify-between pl-6">
+        <div className="w-1/2 flex flex-col items-start justify-between pl-6 md:w-full md:py-6 lg:pl-2">
           <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
           <Link href={link} target="_blank">
             <h2 className="my-2 w-full text-left text-2xl font-bold">
               {title}
             </h2>
           </Link>
-          <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
-          <div className="mt-2 flex items-center">
+          <p className="my-2 md:mt-0 font-medium text-dark dark:text-light">{summary}</p>
+          <div className="mt-2 flex items-center lg:mt-1">
             <Link href={github} target="_blank">
               <GitHubIcon />
             </Link>
@@ -68,13 +68,13 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
 const Project = ({ title, type, img, link, summary, github }) => {
   return (
     <motion.article
-      className="relative w-full h-[130%]  rounded-[1.2rem] rounded-br-2xl   shadow-2xl dark:text-light"
+      className="relative w-full h-[130%] md:h-[107%]  rounded-[1.2rem] rounded-br-2xl   shadow-2xl dark:text-light"
       initial={{ y: 50 }}
       whileInView={{ y: 0 }}
       transition={{ duration: 1.5, type: "spring" }}
     >
       <div className="absolute top-0  -z-10 w-[101%] h-[104%] rounded-[2rem] bg-dark dark:bg-light" />
-      <div className="relative w-full h-[100%] flex bg-light items-center justify-between rounded-[1.2rem] overflow-hidden border border-solid border-dark dark:bg-dark shadow-2xl mb-5">
+      <div className="relative w-full h-[100%] flex lg:flex-col bg-light items-center justify-between rounded-[1.2rem] overflow-hidden border border-solid border-dark dark:bg-dark shadow-2xl mb-5">
         <Link
           href={link}
           target="_blank"
@@ -92,7 +92,7 @@ const Project = ({ title, type, img, link, summary, github }) => {
           />
         </Link>
         {/* <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" /> */}
-        <div className="w-full flex flex-col items-start justify-between pl-6">
+        <div className="w-full flex flex-col items-start justify-between pl-6 lg:pl-2">
           <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
           <Link href={link} target="_blank">
             <h2 className="my-2 w-full text-left text-2xl font-bold">
@@ -125,14 +125,14 @@ const projects = () => {
         <title>Chinweike | Projects page</title>
         <meta name="chinweike" content="projects" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full mb-16 py-6 flex flex-col items-center justify-center">
         <Layout className="pt-10">
           <AnimatedText
             text={"Imagination Trumps Knowledge"}
-            className="mb-5"
+            className="mb-5 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
 
-          <div className="grid grid-cols-12 gap-24 gap-y-[2rem]">
+          <div className="grid grid-cols-12 gap-24 gap-y-[2rem] xl:gap-x-16 lg:gap-x-8 md:gap-y-24">
             <div className="col-span-12 gap-y-[2rem]">
               <MyProjects
                 title={"E-commerce site"}
@@ -154,7 +154,7 @@ const projects = () => {
                         /> */}
             </div>
             {/* Main Projects */}
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Food delivery website"}
                 summary={"Site for buying and selling"}
@@ -164,7 +164,7 @@ const projects = () => {
                 img={assets.tasty}
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Food delivery website"}
                 summary={"Site for buying and selling"}
