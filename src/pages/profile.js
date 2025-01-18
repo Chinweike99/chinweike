@@ -3,7 +3,9 @@ import AnimatedText from "@/Components/AnimatedText";
 import Education from "@/Components/Education";
 import Experience from "@/Components/Experience";
 import Layout from "@/Components/Layout";
+import Services from "@/Components/Services";
 import Skills from "@/Components/Skills";
+import TransitionEffect from "@/Components/TransitionEffect";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
@@ -41,6 +43,7 @@ const profile = () => {
         <title>Chinweikwe | About page</title>
         <meta name="Chinweike" content="about me" />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center dark:text-light">
         <Layout className="pt-10">
           <AnimatedText text={"Passion fuels purpose"} className="mb-10 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
@@ -104,6 +107,7 @@ const profile = () => {
           </div>
 
           <Skills />
+          <Services />
           <Experience />
           <Education />
         </Layout>

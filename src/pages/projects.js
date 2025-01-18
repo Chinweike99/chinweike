@@ -7,13 +7,14 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { assets } from "@/assets/assets";
 import { motion } from "framer-motion";
+import TransitionEffect from "@/Components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
 const MyProjects = ({ type, title, summary, img, link, github }) => {
   return (
     <motion.article
-      className="relative w-full rounded-[1.2rem] rounded-br-2xl mt-[4rem]  shadow-2xl 
+      className="relative w-full xs:w-[87vw]  rounded-[1.2rem] rounded-br-2xl mt-[4rem]  shadow-2xl 
       dark:text-light dark:border dark:border-solid 
       "
       initial={{ y: 50 }}
@@ -30,7 +31,7 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
           <FramerImage
             src={img}
             alt={title}
-            className="w-full h-[35vh] overflow-hidden"
+            className="w-full h-[35vh] md:h-[30vh] overflow-hidden"
             
             priority sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw"
 
@@ -40,9 +41,9 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
         </Link>
 
         <div className="w-1/2 flex flex-col items-start justify-between pl-6 md:w-full md:py-6 lg:pl-2">
-          <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
+          <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">{type}</span>
           <Link href={link} target="_blank">
-            <h2 className="my-2 w-full text-left text-2xl font-bold">
+            <h2 className="my-2 w-full text-left text-2xl font-bold sm:text-small">
               {title}
             </h2>
           </Link>
@@ -54,7 +55,7 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
             <Link
               href={github}
               target="_blank"
-              className="ml-3 rounded-lg bg-dark dark:bg-light dark:text-dark  text-light p-1 px-6 font-semibold"
+              className="ml-3 rounded-lg bg-dark dark:bg-light dark:text-dark sm:px-4 sm:text-base   text-light p-1 px-6 font-semibold"
             >
               See project
             </Link>
@@ -68,12 +69,12 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
 const Project = ({ title, type, img, link, summary, github }) => {
   return (
     <motion.article
-      className="relative w-full h-[130%] md:h-[107%]  rounded-[1.2rem] rounded-br-2xl   shadow-2xl dark:text-light"
+      className="relative w-full h-[130%] md:h-[107%]  rounded-[1.2rem] rounded-br-2xl   shadow-2xl dark:text-light xs:w-[87vw] "
       initial={{ y: 50 }}
       whileInView={{ y: 0 }}
       transition={{ duration: 1.5, type: "spring" }}
     >
-      <div className="absolute top-0  -z-10 w-[101%] h-[104%] rounded-[2rem] bg-dark dark:bg-light" />
+      <div className="absolute top-0  -z-10 w-[101%] h-[104%] rounded-[2rem] bg-dark dark:bg-light md:h-[101%] " />
       <div className="relative w-full h-[100%] flex lg:flex-col bg-light items-center justify-between rounded-[1.2rem] overflow-hidden border border-solid border-dark dark:bg-dark shadow-2xl mb-5">
         <Link
           href={link}
@@ -93,9 +94,9 @@ const Project = ({ title, type, img, link, summary, github }) => {
         </Link>
         {/* <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" /> */}
         <div className="w-full flex flex-col items-start justify-between pl-6 lg:pl-2">
-          <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
+          <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">{type}</span>
           <Link href={link} target="_blank">
-            <h2 className="my-2 w-full text-left text-2xl font-bold">
+            <h2 className="my-2 w-full text-left text-2xl font-bold lg:text-2xl ">
               {title}
             </h2>
           </Link>
@@ -107,7 +108,7 @@ const Project = ({ title, type, img, link, summary, github }) => {
             <Link
               href={github}
               target="_blank"
-              className="ml-2 underline font-semibold"
+              className="ml-2 underline font-semibold md:text-base"
             >
               visit
             </Link>
@@ -125,7 +126,8 @@ const projects = () => {
         <title>Chinweike | Projects page</title>
         <meta name="chinweike" content="projects" />
       </Head>
-      <main className="w-full mb-16 py-6 flex flex-col items-center justify-center">
+      <TransitionEffect />
+      <main className="w-full mb-16  flex flex-col items-center justify-center ">
         <Layout className="pt-10">
           <AnimatedText
             text={"Imagination Trumps Knowledge"}
@@ -186,7 +188,7 @@ const projects = () => {
               />
             </div>
             {/* Main Projects */}
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Food delivery website"}
                 summary={"Site for buying and selling"}
@@ -196,7 +198,7 @@ const projects = () => {
                 img={assets.tasty}
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Food delivery website"}
                 summary={"Site for buying and selling"}

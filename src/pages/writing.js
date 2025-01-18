@@ -1,6 +1,7 @@
 import { assets } from "@/assets/assets";
 import AnimatedText from "@/Components/AnimatedText";
 import Layout from "@/Components/Layout";
+import TransitionEffect from "@/Components/TransitionEffect";
 import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
@@ -82,7 +83,7 @@ const MyArticles = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 hover:underline">
+        <h2 className="xs:text-lg capitalize text-2xl font-bold my-2 hover:underline">
           {title}
         </h2>
       </Link>
@@ -99,13 +100,14 @@ const writing = () => {
         <title>Chinweike | Articles page</title>
         <meta name="chinweike" content="articles" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text={"Reading can change your life.."}
-            className="mb-2"
+            className="mb-2 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <ul className="grid grid-cols-2 gap-16">
+          <ul className="grid grid-cols-2 gap-16 sm:grid-cols-1 lg:gap-8 md:gap-y-16">
             <MyArticles
               img={assets.health}
               title={"Rudiments of HTML5/CSS"}
