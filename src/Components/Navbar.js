@@ -86,7 +86,7 @@ const Navbar = () => {
 
       <nav className="flex items-center gap-2 justify-center flex-wrap">
         <motion.a
-          href="/"
+          href="https://www.linkedin.com/in/innocent-akwolu-5096a5238/"
           target={"_blank"}
           whileHover={{ y: -3 }}
           whileTap={{ scale: 1.3 }}
@@ -97,22 +97,22 @@ const Navbar = () => {
           />
         </motion.a>
 
-        <motion.a href="/" target={"_blank"} whileHover={{ y: 4 }}>
+        <motion.a href="https://github.com/Chinweike99" target={"_blank"} whileHover={{ y: 4 }}>
           <GitHubIcon style={{ fontSize: "1.5rem" }} />
         </motion.a>
 
-        <motion.a href="/" target={"_blank"} whileHover={{ y: -4 }}>
+        <motion.a href="https://x.com/Chinwe_script" target={"_blank"} whileHover={{ y: -4 }}>
           <XIcon style={{ fontSize: "1.5rem" }} />
         </motion.a>
 
-        <motion.a href="/" target={"_blank"} whileHover={{ y: 4 }}>
+        <motion.a href="https://wa.me/2349166330306" target={"_blank"} whileHover={{ y: 4 }}>
           <WhatsAppIcon
             className="text-green-700"
             style={{ fontSize: "1.5rem" }}
           />
         </motion.a>
 
-        <motion.a href="/" target={"_blank"} whileHover={{ y: -4 }}>
+        <motion.a href="https://web.facebook.com/innodigitals" target={"_blank"} whileHover={{ y: -4 }}>
           <FacebookIcon
             className="text-blue-800"
             style={{ fontSize: "1.5rem" }}
@@ -148,7 +148,7 @@ const Navbar = () => {
   
         <nav className="flex items-center gap-4 sm:gap-1 justify-center flex-wrap">
           <motion.a
-            href="/"
+            href="https://www.linkedin.com/in/innocent-akwolu-5096a5238/"
             target={"_blank"}
             whileHover={{ y: -3 }}
             whileTap={{ scale: 1.3 }}
@@ -159,22 +159,22 @@ const Navbar = () => {
             />
           </motion.a>
   
-          <motion.a href="/" target={"_blank"} whileHover={{ y: 4 }}>
+          <motion.a href="https://github.com/Chinweike99" target={"_blank"} whileHover={{ y: 4 }}>
             <GitHubIcon style={{ fontSize: "2.5rem" }} className="text-light dark:text-dark"/>
           </motion.a>
   
-          <motion.a href="/" target={"_blank"} whileHover={{ y: -4 }}>
+          <motion.a href="https://x.com/Chinwe_script" target={"_blank"} whileHover={{ y: -4 }}>
             <XIcon style={{ fontSize: "2.5rem" }} className="text-light dark:text-dark"/>
           </motion.a>
   
-          <motion.a href="/" target={"_blank"} whileHover={{ y: 4 }}>
+          <motion.a href="/https://wa.me/2349166330306" target={"_blank"} whileHover={{ y: 4 }}>
             <WhatsAppIcon
               className="text-green-700"
               style={{ fontSize: "2.5rem" }}
             />
           </motion.a>
   
-          <motion.a href="/" target={"_blank"} whileHover={{ y: -4 }}>
+          <motion.a href="https://web.facebook.com/innodigitals" target={"_blank"} whileHover={{ y: -4 }}>
             <FacebookIcon
               className="text-blue-500  dark:text-blue-800"
               style={{ fontSize: "2.5rem" }}

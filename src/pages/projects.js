@@ -31,7 +31,7 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
           <FramerImage
             src={img}
             alt={title}
-            className="w-full h-[35vh] md:h-[30vh] overflow-hidden"
+            className="w-full h-[35vh] md:h-[100%] overflow-hidden"
             
             priority sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw"
 
@@ -41,14 +41,15 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
         </Link>
 
         <div className="w-1/2 flex flex-col items-start justify-between pl-6 md:w-full md:py-6 lg:pl-2">
-          <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">{type}</span>
+          
           <Link href={link} target="_blank">
-            <h2 className="my-2 w-full text-left text-2xl font-bold sm:text-small">
+            <h2 className=" w-full text-left text-2xl font-bold sm:text-small">
               {title}
             </h2>
           </Link>
-          <p className="my-2 md:mt-0 font-medium text-dark dark:text-light">{summary}</p>
-          <div className="mt-2 flex items-center lg:mt-1">
+          <p className="my-2 md:mt-0 font-medium text-[0.9rem] text-dark dark:text-light">{summary}</p>
+          <i className="text-primary dark:text-primaryDark font-medium text-lg xs:text-base">{type}</i>
+          <div className="my-2 flex items-center lg:mt-1">
             <Link href={github} target="_blank">
               <GitHubIcon />
             </Link>
@@ -137,10 +138,10 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-[2rem] xl:gap-x-16 lg:gap-x-8 md:gap-y-24">
             <div className="col-span-12 gap-y-[2rem]">
               <MyProjects
-                title={"E-commerce site"}
-                summary={"Site for buying and selling"}
+                title={"E-Commerce Clothing Website"}
+                summary={"Responsive e-commerce platform developed with a user-friendly frontend, it offers intuitive navigation and dynamic product displays. "}
                 link={"https://estore-pied-theta.vercel.app/"}
-                type={"My project"}
+                type={"Languages used: ReactJs, TailwindCss"}
                 github={"https://github.com/Chinweike99/estore/tree/master/src"}
                 img={assets.ecomerce}
               />
@@ -156,7 +157,7 @@ const projects = () => {
                         /> */}
             </div>
             {/* Main Projects */}
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Food delivery website"}
                 summary={"Site for buying and selling"}
@@ -165,8 +166,8 @@ const projects = () => {
                 github={"https://github.com/Chinweike99/taSty"}
                 img={assets.tasty}
               />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
+            </div> */}
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Food delivery website"}
                 summary={"Site for buying and selling"}
@@ -175,20 +176,20 @@ const projects = () => {
                 github={"https://github.com/Chinweike99/taSty"}
                 img={assets.tasty}
               />
-            </div>
+            </div> */}
 
             <div className="col-span-12">
               <MyProjects
-                title={"Food delivery website"}
-                summary={"Site for buying and selling"}
+                title={"Food Delivery Website"}
+                summary={"Food delivery platform, featuring both frontend and backend development, connects users with taSty restaurant. With a user-friendly interface and seamless navigation. Although the website currently runs locally, it showcases a comprehensive system designed for both customers and restaurant management."}
                 link={"https://github.com/Chinweike99/taSty"}
-                type={"My project"}
+                type={"Stack: CSS, Reactjs,ExpressJs, MongoDb"}
                 github={"https://github.com/Chinweike99/taSty"}
                 img={assets.tasty}
               />
             </div>
             {/* Main Projects */}
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Food delivery website"}
                 summary={"Site for buying and selling"}
@@ -207,7 +208,7 @@ const projects = () => {
                 github={"https://github.com/Chinweike99/taSty"}
                 img={assets.tasty}
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>

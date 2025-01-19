@@ -57,26 +57,28 @@ const Education = () => {
             />
 
                 <ul className='w-full flex flex-col items-start justify-between'>
-                    <Details type={"Bachelor of Science In Civil Engineering"}
+                    
+                    <Details type={"Complete Web Development"}
+                    degree={"By Dr. Angela Yu"}
+                     time={"April 24 2023 - January 11 2025"}
+                     place={"UDEMY"}
+                     info={"Relevant Skills learnt: HTML, CSS, Bootstrap, JavaSrcipt, EJS, ReactJs, REST-API ExpressJs, NodeJs, PostgreSQL."}
+                    />
+
+                    <Details type={"Software Engineering"}
+                    degree={"ALX"}
+                     time={"June 2023 - December 2023"}
+                     place={""}
+                     info={"Relevant skills learnt: Shell, version control, C, Python, SQL."}
+                    />
+
+<Details type={"Bachelor of Science In Civil Engineering"}
                     degree={"Second Class (Upper division)"}
                      time={"2017 - 2023"}
                      place={"Joseph Sarwuan Tarka University Makurdi (JOSTUM)"}
                      info={"Relevant courses includes: Structural Analysis, Structural design and Engineering Mathematics."}
                     />
 
-                    <Details type={"Bachelor of Science In Civil Engineering"}
-                    degree={"Second Class (Upper division)"}
-                     time={"2017 - 2023"}
-                     place={"Joseph Sarwuan Tarka University Makurdi (JOSTUM)"}
-                     info={"Relevant courses includes: Structural Analysis, Structural design and Engineering Mathematics."}
-                    />
-
-                    <Details type={"Bachelor of Science In Civil Engineering"}
-                    degree={"Second Class (Upper division)"}
-                     time={"2017 - 2023"}
-                     place={"Joseph Sarwuan Tarka University Makurdi (JOSTUM)"}
-                     info={"Relevant courses includes: Structural Analysis, Structural design and Engineering Mathematics."}
-                    />
 
 
 
