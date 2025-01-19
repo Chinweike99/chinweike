@@ -31,7 +31,7 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
           <FramerImage
             src={img}
             alt={title}
-            className="w-full h-[35vh] md:h-[100%] overflow-hidden"
+            className="w-full  md:h-[100%] overflow-hidden"
             
             priority sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw"
 

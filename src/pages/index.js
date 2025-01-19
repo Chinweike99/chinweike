@@ -46,7 +46,7 @@ export default function Home() {
         <Layout className="pt-8 md:pt-16 sm:pt-8">
           <div className="flex lg:flex-col gap-10 items-center justify-between w-full">
             <motion.div
-              className="w-1/3 md:w-2/3"
+              className="w-[50vh] md:w-2/3 lg:w-3/3"
               variants={imageSlide}
               initial="initial"
               animate="animate"
@@ -54,7 +54,7 @@ export default function Home() {
               <Image
                 src={assets.profilepic}
                 alt="chinweike"
-                className="w-full h-auto rounded-[1.5rem] lg:hidden md:inline-block md:w-full"
+                className="w-full h-auto rounded-[1.5rem] md:inline-block md:w-full"
                 priority
                 sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
