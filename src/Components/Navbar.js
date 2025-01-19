@@ -143,7 +143,7 @@ const Navbar = () => {
           <CustomMobileLink href="/profile" title={"About"} className="text-4xl"  toggle={handleOpen}/>
           <CustomMobileLink href="/projects" title={"Projects"} className="text-4xl"  toggle={handleOpen}/>
           {/* <CustomMobileLink href="/myArticle.js" title={"Articles"} className="ml-4" /> */}
-          <CustomMobileLink href="/writing" title={"Articles"} className=" text-4xl" toggle={handleOpen} />
+          {/* <CustomMobileLink href="/writing" title={"Articles"} className=" text-4xl" toggle={handleOpen} /> */}
         </nav>
   
         <nav className="flex items-center gap-4 sm:gap-1 justify-center flex-wrap">

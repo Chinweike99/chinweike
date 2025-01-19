@@ -7,7 +7,8 @@ import ecomerce from "./ecomerce.png"
 import tasty from "./tasty.png"
 import health from './health.jpg'
 import printf from './printf.png'
+import home from './home.png'
 
 export const assets = {
- profilephoto, profilepic,ecomerce, webDeveloper, must, must2, tasty,health, printf
+ profilephoto, profilepic,ecomerce, webDeveloper, must, must2, tasty,health, printf, home
 }

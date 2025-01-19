@@ -52,7 +52,7 @@ export default function Home() {
               animate="animate"
             >
               <Image
-                src={assets.profilepic}
+                src={assets.home}
                 alt="chinweike"
                 className="w-full h-auto rounded-[1.5rem] md:inline-block md:w-full"
                 priority
