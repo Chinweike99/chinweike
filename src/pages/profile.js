@@ -57,7 +57,7 @@ const profile = () => {
               <h2 className="mb-4 text-lg font-bold  uppercase texxr-dark/75">
                 Biography
               </h2>
-              <p className="font-medium">
+              <p className="font-medium lg:text-2xl">
                 Hi, I'm Akwolu Innocent Chinweike, a passionate web developer from Nigeria. I hold a degree in Civil Engineering from Joseph Sarwuan Tarka University, Makurdi, but my journey into tech began in December 2022. I’ve always loved tackling complex tasks, and coding felt like the perfect challenge. It started with a desire to learn a digital skill, and after conversations with friends, I decided to dive into programming.
                 <br/><br />
                  My first steps were with Python, although the learning curve was steep, I stayed committed. In April 2023, I invested in the "Complete Web Development" course by Dr. Angela Yu on Udemy. Shortly after, also joined the ALX Software Engineering program. Though I had to step back from ALX due to work and resource constraints, the foundation it gave me in C programming significantly boosted my understanding of coding concepts. <br/> Since then, I’ve balanced learning and building projects in both front-end and back-end development. I’m excited to continue growing in this field and applying my skills to real-world projects. 
