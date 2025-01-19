@@ -43,10 +43,10 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
-        <Layout className="pt-8 md:pt-16 sm:pt-8">
+        <Layout className="pt-4 md:pt-8 sm:pt-4 lg:pt-0">
           <div className="flex lg:flex-col gap-10 items-center justify-between w-full">
             <motion.div
-              className="w-[50vh] md:w-2/3 lg:w-[40vh]"
+              className="w-[50vh] md:w-2/3 lg:w-[35vh]"
               variants={imageSlide}
               initial="initial"
               animate="animate"
