@@ -47,7 +47,7 @@ const MyProjects = ({ type, title, summary, img, link, github }) => {
               {title}
             </h2>
           </Link>
-          <p className="my-2 md:mt-0 font-medium text-[0.9rem] text-dark dark:text-light">{summary}</p>
+          <p className=" md:mt-0 font-medium text-[0.9rem] text-dark dark:text-light">{summary}</p>
           <i className="text-primary dark:text-primaryDark font-medium text-lg xs:text-base">{type}</i>
           <div className="my-2 flex items-center lg:mt-1">
             <Link href={github} target="_blank">
@@ -131,7 +131,7 @@ const projects = () => {
       <main className="w-full mb-16  flex flex-col items-center justify-center ">
         <Layout className="pt-10">
           <AnimatedText
-            text={"Imagination Trumps Knowledge"}
+            text={"Bringing Ideas to Life"}
             className="mb-5 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
 
@@ -146,38 +146,6 @@ const projects = () => {
                 img={assets.ecomerce}
               />
 
-              {/* <MyProjects 
-                        title={"Food delivery website"}
-                        summary={"Site for buying and selling"}
-                        link={'https://github.com/Chinweike99/taSty'}
-                        type={"My project"}
-                        github={"https://github.com/Chinweike99/taSty"}
-                        img={assets.tasty}
-                        
-                        /> */}
-            </div>
-            {/* Main Projects */}
-            {/* <div className="col-span-6 sm:col-span-12">
-              <Project
-                title={"Food delivery website"}
-                summary={"Site for buying and selling"}
-                link={"https://github.com/Chinweike99/taSty"}
-                type={"My project"}
-                github={"https://github.com/Chinweike99/taSty"}
-                img={assets.tasty}
-              />
-            </div> */}
-            {/* <div className="col-span-6 sm:col-span-12">
-              <Project
-                title={"Food delivery website"}
-                summary={"Site for buying and selling"}
-                link={"https://github.com/Chinweike99/taSty"}
-                type={"My project"}
-                github={"https://github.com/Chinweike99/taSty"}
-                img={assets.tasty}
-              />
-            </div> */}
-
             <div className="col-span-12">
               <MyProjects
                 title={"Food Delivery Website"}
@@ -186,6 +154,16 @@ const projects = () => {
                 type={"Stack: CSS, Reactjs,ExpressJs, MongoDb"}
                 github={"https://github.com/Chinweike99/taSty"}
                 img={assets.tasty}
+              />
+            </div>
+
+              <MyProjects
+                title={"Custom _printf function"}
+                summary={"Collaborated with a partner to build a custom _printf function in C, designed to replicate the functionality of the standard printf library function. The project involved implementing formatted output for various data types, handling format specifiers (e.g., %d, %s, %c), and ensuring compatibility with edge cases. This project deepened my understanding of variadic functions, memory management, and low-level I/O operations in C."}
+                link={"https://github.com/Rosybliz/printf"}
+                type={"Stack: C"}
+                github={"https://github.com/Rosybliz/printf"}
+                img={assets.printf}
               />
             </div>
             {/* Main Projects */}
