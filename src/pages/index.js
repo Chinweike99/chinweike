@@ -68,7 +68,7 @@ export default function Home() {
                 text={"Crafting Excellence Through Creativity"}
                 className="!text-left text-[2rem] xl:!text-3xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-xl"
               />
-              <p className="my-4 text-base font-medium md:text-sm sm:text-xs text-justify lg:text-center md:text-center sm:text-center">
+              <p className="my-4 text-base font-medium md:text-sm sm:text-xs text-justify lg:text-center md:text-center sm:text-center lg:text-2xl">
                 Hi there! I’m a full-stack developer specializing in bringing
                 ideas to reality with a drive to transform concepts into impactful
                 solutions. My approach combines precision, creativity, and a
