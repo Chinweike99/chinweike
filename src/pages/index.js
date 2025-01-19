@@ -46,7 +46,7 @@ export default function Home() {
         <Layout className="pt-0 md:pt-8 sm:pt-4 lg:pt-0">
           <div className="flex lg:flex-col gap-10 items-center justify-between w-full">
             <motion.div
-              className="w-[50vh] md:w-2/3 lg:w-[35vh]"
+              className="w-full md:w-2/3 lg:w-[40vh] mt-8"
               variants={imageSlide}
               initial="initial"
               animate="animate"
