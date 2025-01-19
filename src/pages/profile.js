@@ -1,5 +1,6 @@
 import { assets } from "@/assets/assets";
 import AnimatedText from "@/Components/AnimatedText";
+import ContactMe from "@/Components/ContactMe";
 import Education from "@/Components/Education";
 import Experience from "@/Components/Experience";
 import Layout from "@/Components/Layout";
@@ -10,6 +11,7 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 
 const profile = () => {
 
@@ -44,6 +46,7 @@ const profile = () => {
         <meta name="Chinweike" content="about me" />
       </Head>
       <TransitionEffect />
+      <ToastContainer position="top-right"/>
       <main className="flex w-full flex-col items-center dark:text-light">
         <Layout className="pt-10">
           <AnimatedText text={"Passion fuels purpose"} className="mb-10 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
@@ -110,6 +113,7 @@ const profile = () => {
           <Services />
           <Experience />
           <Education />
+          <ContactMe />
         </Layout>
       </main>
     </>

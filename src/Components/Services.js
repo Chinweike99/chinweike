@@ -30,7 +30,7 @@ const Services = () => {
     <>
       <Head>
         <title>Chinweike | Services page</title>
-        <meta name="chinweike" content="articles" />
+        <meta name="chinweike" content="services" />
       </Head>
       <TransitionEffect />
       <main className=" mb-16 flex flex-col w-full items-center justify-center overflow-hidden dark:text-light">
