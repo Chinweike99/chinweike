@@ -84,7 +84,7 @@ const Experience = () => {
             <Details
               position={"Frontend developer"}
               company={"AuroraWorks"}
-              time={"March 2024 – June 2024"}
+              time={"March 2024 – August 2024"}
               work={aura.map((task, index) => {
                 return (
                   <>
