@@ -83,7 +83,7 @@ export default function Home() {
 
               <div className="flex gap-5 md:gap-3 self-start items-center mt-2">
                 <Link
-                  href="/resume"
+                  href="/chinweike.pdf"
                   target="_blank"
                   className="flex gap-2 items-center bg-dark text-light p-2 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark  dark:hover:border-light dark:hover:bg-dark dark:hover:text-light border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark md:px-4 "
                   do
