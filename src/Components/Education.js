@@ -73,7 +73,7 @@ const Education = () => {
                     />
 
 <Details type={"Bachelor of Science In Civil Engineering"}
-                    degree={"Second Class (Upper division)"}
+                    degree={"Honors: Second Class hons. (Upper division)"}
                      time={"2017 - 2023"}
                      place={"Joseph Sarwuan Tarka University Makurdi (JOSTUM)"}
                      info={"Relevant courses includes: Structural Analysis, Structural design and Engineering Mathematics."}

@@ -14,22 +14,35 @@ const ContactMe = () => {
     const serviceId = process.env.NEXT_PUBLIC_SERVICEID;
     const templateId = process.env.NEXT_PUBLIC_TEMPLATEID;
     const publicKey = process.env.NEXT_PUBLIC_PUBLICID;
-
+    const test = process.env.NEXT_PUBLIC_PUBLIV;
 
     const notify = () => toast("Message Sucesful!");
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        console.log("Service ID:", serviceId);
+console.log("Template ID:", templateId);
+console.log("Public Key:", publicKey);
+console.log("Public test:", test);
+console.log("Helo Nigeria");
+
+if (!serviceId || !templateId || !publicKey) {
+  console.error('Missing EmailJS environment variables.');
+}
+
         emailjs
           .sendForm(serviceId, templateId, form.current, publicKey)
           .then(
             () => {
               notify();
+              
               console.log('SUCCESS!');
             },
             (error) => {
-              console.log('FAILED...', error.text);
+              toast.error(error)
+              console.log('FAILED...', error.message);
             },
           );
           return form.current.reset();
