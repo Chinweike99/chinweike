@@ -69,9 +69,7 @@ export default function Home() {
                 className="!text-left text-[2rem] xl:!text-3xl lg:!text-center lg:!text-4xl md:!text-3xl sm:!text-xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs text-justify lg:text-center md:text-center sm:text-center lg:text-2xl">
-                Hi there! I’m a full-stack developer specializing in bringing
-                ideas to reality with a drive to transform concepts into impactful
-                solutions. My approach combines precision, creativity, and a
+              Hi there! I’m a full-stack developer with a passion for turning ideas into impactful solutions and bringing concepts to life. My approach combines precision, creativity, and a
                 commitment to excellence in every project I undertake. From
                 designing intuitive user experiences to developing cutting-edge
                 applications and solving complex challenges, my goal is to
