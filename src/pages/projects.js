@@ -141,7 +141,7 @@ const projects = () => {
                 title={"E-Commerce Clothing Website"}
                 summary={"Responsive e-commerce platform developed with a user-friendly frontend, it offers intuitive navigation and dynamic product displays. "}
                 link={"https://estore-pied-theta.vercel.app/"}
-                type={"Languages used: ReactJs, TailwindCss"}
+                type={"Stack: ReactJs, TailwindCss"}
                 github={"https://github.com/Chinweike99/estore/tree/master/src"}
                 img={assets.ecomerce}
               />
