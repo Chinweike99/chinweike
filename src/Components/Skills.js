@@ -47,8 +47,14 @@ import Image from "next/image";
 const Skills = () =>{
   return (
     <>
-      <div>
-      <div className="my-20 grid grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-8">
+      <div className=" my-[8rem] bg-red-400">
+        <div>
+        <h1>Skills & Technical Knowledge</h1>
+        <p>
+        This section showcases my technical expertise and proficiency in programming languages, frameworks, tools, and technologies. It reflects my problem-solving skills, analytical thinking, and commitment to continuous growth. Explore to discover the knowledge and capabilities that empower me to create innovative solutions
+        </p>
+        </div>
+      <div className=" grid grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-8">
       {
         myStacks.map((skill, index) => {
           return(
