@@ -47,9 +47,9 @@ import Image from "next/image";
 const Skills = () =>{
   return (
     <>
-      <div className=" my-[8rem] bg-red-400">
-        <div>
-        <h1>Skills & Technical Knowledge</h1>
+      <div className=" my-[8rem] ">
+        <div className="flex flex-col gap-5 items-center text-center p-10 md:p-0 sm:p-0">
+        <h1 className="font-bold text-3xl lg:text-3xl md:text-2xl sm:text-xl">Skills & Technical Knowledge</h1>
         <p>
         This section showcases my technical expertise and proficiency in programming languages, frameworks, tools, and technologies. It reflects my problem-solving skills, analytical thinking, and commitment to continuous growth. Explore to discover the knowledge and capabilities that empower me to create innovative solutions
         </p>
@@ -58,7 +58,12 @@ const Skills = () =>{
       {
         myStacks.map((skill, index) => {
           return(
-            <div key={index} className=" p-2 rounded-xl border-2 border-dark dark:border-white flex flex-col space-y-16 ">
+            <motion.div key={index} className=" p-2 rounded-xl border-2 border-dark dark:border-white flex flex-col space-y-16 
+            "
+            initial={{ y: 100 }}
+                whileInView={{y:0, transition:{ duration: 1, type: "spring",}}}
+                whileHover={{scale:1.08, transition:{duration:0.5}}}
+            >
               <div className="flex items-center justify-between bg-dark text-white dark:bg-[#435a59] rounded-xl p-3">
                 <Image src={skill.logo} alt="programming language"
                 className="h-14 w-14"
@@ -70,7 +75,7 @@ const Skills = () =>{
                 <h1 className="font-bold text-2xl lg:text-3xl md:text-2xl sm:text-xl">{skill.language}</h1>
                 <h1 className="text-base font-semibold">{skill.stack}</h1>
               </div>
-            </div>
+            </motion.div>
           )
         })
       }
