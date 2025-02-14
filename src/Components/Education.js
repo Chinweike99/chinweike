@@ -72,7 +72,7 @@ const Education = () => {
                      info={"Relevant skills learnt: Shell, version control, C, Python, SQL."}
                     />
 
-<Details type={"Bachelor of Science In Civil Engineering"}
+<Details type={"B.Eng. Civil Engineering"}
                     degree={"Honors: Second Class hons. (Upper division)"}
                      time={"2017 - 2023"}
                      place={"Joseph Sarwuan Tarka University Makurdi (JOSTUM)"}
