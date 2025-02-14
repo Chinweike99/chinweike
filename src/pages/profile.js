@@ -57,7 +57,7 @@ const profile = () => {
               <h2 className="mb-4 text-lg font-bold  uppercase texxr-dark/75">
                 Biography
               </h2>
-              <p className="">
+              <p className="font-medium ">
                 Hi, I'm Akwolu Innocent Chinweike, a passionate web developer from Nigeria. I hold a degree in Civil Engineering from Joseph Sarwuan Tarka University, Makurdi, but my journey into tech began in December 2022. I’ve always loved tackling complex tasks, and coding felt like the perfect challenge. It started with a desire to learn a digital skill, and after conversations with friends, I decided to dive into programming.
                 <br/><br />
                  My first steps were with Python, although the learning curve was steep, I stayed committed. In April 2023, I invested in the "Complete Web Development" course by Dr. Angela Yu on Udemy. Shortly after, also joined the ALX Software Engineering program. Though I had to step back from ALX due to work and resource constraints, the foundation it gave me in C programming significantly boosted my understanding of coding concepts. <br/> Since then, I’ve balanced learning and building projects in both front-end and back-end development. I’m excited to continue growing in this field and applying my skills to real-world projects. 
@@ -70,23 +70,29 @@ const profile = () => {
                  Outside of coding: I enjoy exploring new technologies, hanging out with friends, or watching a good movie.
               </p>
             </div>
-            <div className="col-span-4 relative h-max rounded-2xl border-2 border-solid border-dark dark:border-light bg-light p-8 dark:bg-dark xl:col-span-4 md:order-1 md:col-span-8">
+
+            {/* Image section */}
+            <div className="col-span-4 relative h-max rounded-2xl border-2 border-solid border-dark dark:border-light bg-light p-8 dark:bg-dark xl:col-span-4 md:order-1 md:col-span-8 min-w-[350px] sm:min-w-0 max-h-[60rem] ml-[6rem] lg:ml-[1rem] md:ml-0 sm:ml-0">
+
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light " />
               <Image
                 src={assets.must2}
                 alt="profile-image"
-                className="w-full h-auto rounded-2xl"
+                className="w-full  h-auto rounded-2xl"
                 priority
-                sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                
               />
             </div>
 
-            <div className="col-span-6 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+
+
+              {/* Client */}
+            <div className="col-span-6 flex flex-col items-center justify-between xl:col-span-8 md:flex-row xl:items-center md:order-3  bg-dark text-white md:dark:bg-[#435a59] rounded-2xl p-3 ">
               <div className="flex flex-col items-center justify-center xl:items-center md:items-center">
                 <span className="inline-block text-5xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={10} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-xl font-medium capitalize text-light/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Satisfied clients
                 </h2>
               </div>
@@ -95,7 +101,7 @@ const profile = () => {
                 <span className="inline-block text-5xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={15} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-xl font-medium capitalize text-light/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Projects completed
                 </h2>
               </div>
@@ -104,7 +110,7 @@ const profile = () => {
                 <span className="inline-block text-5xl font-bold xl:items-center md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={2} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-xl font-medium capitalize text-light/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   Years of experience
                 </h2>
               </div>
