@@ -138,15 +138,21 @@ const Navbar = () => {
         initial={{scale:0, opacity:1, x:"-50%", y:"-50%"}}
         animate={{scale:1, opacity:1, transition:{duration:0.7}}}
         className="min-w-[90vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark dark:bg-light/55 rounded-[2rem] backdrop-blur-md py-[9rem]">
-        <nav className="flex items-center flex-col justify-center mb-[2rem] light:text-light">
+        <nav className="flex items-center flex-col justify-center mb-[2rem] light:text-light relative">
           <CustomMobileLink href="/" title={"Home"} className="text-4xl "  toggle={handleOpen}/>
           <CustomMobileLink href="/profile" title={"About"} className="text-4xl"  toggle={handleOpen}/>
           <CustomMobileLink href="/projects" title={"Projects"} className="text-4xl"  toggle={handleOpen}/>
-          {/* <CustomMobileLink href="/myArticle.js" title={"Articles"} className="ml-4" /> */}
-          {/* <CustomMobileLink href="/writing" title={"Articles"} className=" text-4xl" toggle={handleOpen} /> */}
         </nav>
   
+        <button className="absolute top-[2rem] right-[4rem] text-2xl dark:text-dark font-bold text-light"
+        onClick={()=>setOpen(false)}
+        >
+          Close
+        </button>
+
+
         <nav className="flex items-center gap-4 sm:gap-1 justify-center flex-wrap">
+          
           <motion.a
             href="https://www.linkedin.com/in/innocent-akwolu-5096a5238/"
             target={"_blank"}
