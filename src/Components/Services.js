@@ -37,7 +37,7 @@ const Services = () => {
         <Layout className="pt-16 p-5">
           <AnimatedText
             text={"Services i provide"}
-            className="mb-8 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+            className="font-bold text-5xl mb-[4rem] w-full text-center md:text-6xl xs:text-4xl md:mb-16"
           />
           <motion.ul className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-2 gap-16 sm:grid-cols-1 lg:gap-8 "
           initial={{ y: 100 }}

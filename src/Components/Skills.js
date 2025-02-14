@@ -48,8 +48,8 @@ const Skills = () =>{
   return (
     <>
       <div className=" my-[8rem] ">
-        <div className="flex flex-col gap-5 items-center text-center p-10 md:p-0 sm:p-0">
-        <h1 className="font-bold text-3xl lg:text-3xl md:text-2xl sm:text-xl">Skills & Technical Knowledge</h1>
+        <div className="flex flex-col gap-5 items-center text-center p-10 md:p-0 sm:p-0 mb-5">
+        <h1 className="font-bold text-5xl w-full text-center md:text-6xl xs:text-4xl">Skills & Technical Knowledge</h1>
         <p>
         This section showcases my technical expertise and proficiency in programming languages, frameworks, tools, and technologies. It reflects my problem-solving skills, analytical thinking, and commitment to continuous growth. Explore to discover the knowledge and capabilities that empower me to create innovative solutions
         </p>
