@@ -39,7 +39,7 @@ const Services = () => {
             text={"Services i provide"}
             className="font-bold text-5xl mb-[4rem] w-full text-center md:text-6xl xs:text-4xl md:mb-16"
           />
-          <motion.ul className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-2 gap-16 sm:grid-cols-1 lg:gap-8 "
+          <motion.ul className="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-21 sm:grid-cols-1  "
           initial={{ y: 100 }}
           whileInView={{y:0, transition:{ duration: 1.3, type: "spring",}}}
           >
