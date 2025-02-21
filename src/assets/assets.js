@@ -15,10 +15,11 @@ import reactjs from './reactjs.png'
 import restApi from './restApi.png'
 import js from './js.png'
 import github from './github.png'
+import InnocentProfileCover from './InnocentProfileCover.jpg'
 
 export const assets = {
 profilepic,ecomerce, webDeveloper, must2, tasty,health, printf, home,
-express,mongoDb, nextjs, nodejs, postgreSql, reactjs, restApi, js
+express,mongoDb,InnocentProfileCover, nextjs, nodejs, postgreSql, reactjs, restApi, js
 }
 
 

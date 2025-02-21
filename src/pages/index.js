@@ -9,6 +9,7 @@ import SaveAltIcon from "@mui/icons-material/SaveAlt";
 import Hireme from "@/Components/Hireme";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/Components/TransitionEffect";
+import ProfileCard from "@/Components/ProfileCard";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,7 +46,7 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-[90vh] dark:text-light ">
         <Layout className="pt-0 md:pt-8 sm:pt-4 lg:pt-0">
           <div className="flex lg:flex-col gap-10 items-center justify-between w-full">
-            <motion.div
+            {/* <motion.div
               className="w-full md:w-2/3 lg:w-[40vh] mt-8"
               variants={imageSlide}
               initial="initial"
@@ -58,8 +59,9 @@ export default function Home() {
                 priority
                 sizes="(max-width: 760px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
-              {/* priority increases the image loading speed. */}
-            </motion.div>
+            </motion.div> */}
+
+            <ProfileCard />
 
             <div className="w-2/3 flex flex-col items-center self-center lg:text-center lg:w-full">
               {/* <h1>Turning Vision into Reality with code</h1> */}
